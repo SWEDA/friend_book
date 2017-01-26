@@ -1,0 +1,70 @@
+<!--
+<h1>Sample App</h1>
+<p>
+ This is the home page for the
+  <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+  sample application.
+  -->
+  <% provide(:title, "Home") %>
+<div>
+  <h3 align="center">Friends List</h3>
+    <p align="right"> <%= link_to "Add a new friend", add_friend_pages_url, class: "btn btn-md btn-primary" %></p>
+ </div>
+ <br/>
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Phone</th>
+      <th>Email id</th>
+      <th>Date of Birth</th>
+      <th>Address</th>
+      <th>Show</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Dinsanth</td>
+      <td>Pulikunnath</td>
+      <td>7736220616</td>
+      <td>dinsanthp@gmail.com</td>
+      <td>12/09/1992</td>
+      <td>Guruvayur</td> 
+      <th><%= link_to "Show", '#', class: "btn btn-md btn-primary" %></th>
+      <th><%= link_to "Edit", '#', class: "btn btn-md btn-primary" %></th>
+      <th><%= link_to "Delete", '#', class: "btn btn-md btn-primary" %></th>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Lijo</td>
+      <td>Francis</td>
+      <td>9400747545</td>
+      <td>lijofrancis333@gmail.com</td>
+      <td>30/01/1991</td>
+      <td>Kakkanad</td>
+      <th><%= link_to "Show", '#', class: "btn btn-md btn-primary" %></th>
+      <th><%= link_to "Edit", '#', class: "btn btn-md btn-primary" %></th>
+      <th><%= link_to "Delete", '#', class: "btn btn-md btn-primary" %></th>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Vishnu</td>
+      <td>PP</td>
+      <td>9037678921</td>
+      <td>vishnupattali@gmail.com</td>
+       <td>31/01/1991</td>
+        <td>Thrissur</td>
+        <th><%= link_to "Show", '#', class: "btn btn-md btn-primary" %></th>
+      <th><%= link_to "Edit", '#', class: "btn btn-md btn-primary" %></th>
+      <th><%= link_to "Delete", '#', class: "btn btn-md btn-primary" %></th>
+    </tr>
+  </tbody>
+  <li class="active"><a href="/ideas">Ideas</a></li>
+</table>
+</div>
+</p>

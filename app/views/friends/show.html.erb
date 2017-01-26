@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First Name:</strong>
+  <%= @friend.fname %>
+</p>
+
+<p>
+  <strong>Last Name:</strong>
+  <%= @friend.lname %>
+</p>
+
+<p>
+  <strong>Email id:</strong>
+  <%= @friend.emailid %>
+</p>
+
+<p>
+  <strong>Phone No:</strong>
+  <%= @friend.phone %>
+</p>
+
+<p>
+  <strong>Date of Birth:</strong>
+  <%= @friend.dob %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @friend.address %>
+</p>
+
+<%= link_to 'Edit', edit_friend_path(@friend) %> |
+<%= link_to 'Back', friends_path %>
